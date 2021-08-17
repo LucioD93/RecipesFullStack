@@ -1,0 +1,43 @@
+[
+    {
+        "name": "peanut butter and jelly sandwich",
+        "ingredients": [
+            "peanut butter",
+            "jelly",
+            "bread"
+        ]
+    },
+    {
+        "name": "buckeyes",
+        "ingredients": [
+            "chocolate",
+            "peanut butter",
+            "sugar"
+        ]
+    },
+    {
+        "name": "hawaiian pizza",
+        "ingredients": [
+            "cheese",
+            "pizza dough",
+            "tomato sauce",
+            "pineapple",
+            "bacon"
+        ]
+    },
+    {
+        "name": "hot chocolate",
+        "ingredients": [
+            "milk",
+            "chocolate",
+            "sugar"
+        ]
+    },
+    {
+        "name": "grilled cheese sandwich",
+        "ingredients": [
+            "bread",
+            "cheese"
+        ]
+    }
+]
