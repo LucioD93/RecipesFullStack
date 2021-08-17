@@ -1,4 +1,5 @@
 import React from 'react'
+import '../styles.css'
 
 class SearchBar extends React.Component {
 
@@ -14,10 +15,14 @@ class SearchBar extends React.Component {
     render() {
         const searchValue = this.props.searchValue
         return (
-            <div>
-                <span>Search recipes</span>
+            <div className="searchBar">
+                <h2 className="searchLabel">
+                    What do you want to eat today?
+                </h2>
                 <input
+                    className="searchInput"
                     type="text"
+                    placeholder="Type Something"
                     value={searchValue}
                     onChange={this.handleChange}
                 />

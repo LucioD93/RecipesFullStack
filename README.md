@@ -6,6 +6,7 @@ The backend of the application consists of a simple `Express JS` REST API server
 
 A noteworthy trade-off of the logic of the application is that the filter by ingredients functionality works by reciving the full name of the ingredient, meaning that, for example, if it received a query of *chee* it won't match the recipes containing the ingredient *cheese*.
 
+
 ## Frontend:
 
 `React JS` was selected for the implementation of the frontend of the application. The estructure of the app consists of two components. One for the search functionality and a presentational component for the information of a given recipe.
@@ -41,9 +42,10 @@ To start the frontend run the following commands:
 
 This starts the application on ``localhost:3000`` which is now reachable in a local browser.
 
+
 ### Testing:
 
-The implementation of the tests are only on the frontend of the application.
+The implementation of the tests are only on the frontend of the application. A note on the testing methodology is that is linked to the backend server, so if the data changes the tests may fail. To prevent this the tests could use a mock server to return only the data that expected by the tests.
 
 To run the unit tests run the following commands:
 

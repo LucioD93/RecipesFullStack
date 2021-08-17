@@ -37,17 +37,19 @@ class App extends Component {
 
   render () {
     const searchValue = this.props.searchValue
-    return <div style={{textAlign: 'center', marginTop: 15}}>
+    return (<div>
       <div>
         <SearchBar
           searchValue={searchValue}
           onSearchValueChange={this.handleSearchValueChange}
         />
       </div>
-      {this.state.recipes.map(function(recipe, i){
-        return <Recipe recipe={recipe} key={i} />
-      })}
-    </div>
+      <div className="recipes-container">
+        {this.state.recipes.map(function(recipe, i){
+          return <Recipe recipe={recipe} key={i} />
+        })}
+      </div>
+    </div>)
   }
 }
 

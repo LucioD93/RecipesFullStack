@@ -11,7 +11,7 @@ describe("SearchBar component", () => {
         searchValue={searchValue}
         onSearchValueChange={mockChangeValue}
       />)
-      const tagElement = screen.getByText(/Search recipes/)
+      const tagElement = screen.getByText('What do you want to eat today?')
       expect(tagElement).toBeInTheDocument()
     })
     
