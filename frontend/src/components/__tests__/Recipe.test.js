@@ -12,9 +12,9 @@ function renderRecipe() {
 }
 
 it('renders recipe name', () => {
-  renderRecipe()
-  const nameElement = screen.getByText(/Test/)
-  expect(nameElement).toBeInTheDocument()
+    renderRecipe()
+    const nameElement = screen.getByText(/Test/)
+    expect(nameElement).toBeInTheDocument()
 })
 
 it('renders ingredients', () => {

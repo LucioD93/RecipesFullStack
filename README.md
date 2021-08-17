@@ -45,7 +45,7 @@ This starts the application on ``localhost:3000`` which is now reachable in a lo
 
 ### Testing:
 
-The implementation of the tests are only on the frontend of the application. A note on the testing methodology is that is linked to the backend server, so if the data changes the tests may fail. To prevent this the tests could use a mock server to return only the data that expected by the tests.
+The implementation of the tests are only on the frontend of the application. A note on the testing methodology is that it is linked to the backend server, so if the data changes the tests may fail. To prevent this the tests could use a mock server to return only the data that expected by the tests.
 
 To run the unit tests run the following commands:
 
