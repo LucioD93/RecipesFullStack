@@ -9,7 +9,7 @@ class Recipe extends React.Component {
                 <div>
                     <img
                         className='recipeImage'
-                        src="https://image.flaticon.com/icons/png/64/701/701965.png"
+                        src="https://www.svgrepo.com/show/84264/recipes.svg"
                         alt="Recipe"
                     ></img>
                 </div>

@@ -12,4 +12,12 @@ function get_filtered_recipe_data(value) {
     })
 }
 
-module.exports = { get_recipes_data, get_filtered_recipe_data }
+function add_new_recipe(value) {
+    let rawdata = fs.readFileSync('sample_recipes.json')
+    recipes = JSON.parse(rawdata)
+    recipes.push(value)
+    console.log(value)
+    fs.writeFileSync('sample_recipes.json', JSON.stringify(recipes, null, 2))
+}
+
+module.exports = { get_recipes_data, get_filtered_recipe_data, add_new_recipe }
