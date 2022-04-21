@@ -9,7 +9,7 @@ A noteworthy trade-off of the logic of the application is that the filter by ing
 
 ## Frontend:
 
-`React JS` was selected for the implementation of the frontend of the application. The estructure of the app consists of two components. One for the search functionality and a presentational component for the information of a given recipe.
+`React JS` was selected for the implementation of the frontend of the application. The structure of the app consists of two components. One for the search functionality and a presentational component for the information of a given recipe.
 
 The main *App* component lifecycle is used to detect when the app is started and a http request is made to the backend requesting the complete list of recipes that are then rendered using the *Recipe* component.
 
