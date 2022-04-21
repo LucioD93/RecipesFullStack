@@ -17,7 +17,12 @@ function add_new_recipe(value) {
     recipes = JSON.parse(rawdata)
     recipes.push(value)
     console.log(value)
-    fs.writeFileSync('sample_recipes.json', JSON.stringify(recipes, null, 2))
+    fs.writeFileSync(
+        'sample_recipes.json',
+        // The arguments null, 2 are only needed to
+        // write a formatted json to the file
+        JSON.stringify(recipes, null, 2)
+    )
 }
 
 module.exports = { get_recipes_data, get_filtered_recipe_data, add_new_recipe }
