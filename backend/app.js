@@ -1,15 +1,23 @@
 const express = require('express')
+var bodyParser = require('body-parser')
 const cors = require('cors')
 const app = express()
 const port = 3001
 
-const { get_recipes_data, get_filtered_recipe_data } = require('./data')
+const { get_recipes_data, get_filtered_recipe_data, add_new_recipe } = require('./data')
 
+app.use(bodyParser.urlencoded({ extended: true }))
+app.use(bodyParser.json())
 app.use(cors())
 
 app.get('/', (req, res) => {
   const query = req.query['search_value']
   res.send(query ? get_filtered_recipe_data(query) : get_recipes_data())
+})
+
+app.post('/', (req,res) => {
+  add_new_recipe(req.body)
+  res.send(get_recipes_data())
 })
 
 app.listen(port, () => {
