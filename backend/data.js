@@ -1,7 +1,7 @@
 const fs = require('fs')
 
 function get_recipes_data() {
-    let rawdata = fs.readFileSync('sample_recipes.json')
+    let rawdata = fs.readFileSync('recipes.json')
     return recipes = JSON.parse(rawdata)
 }
 
